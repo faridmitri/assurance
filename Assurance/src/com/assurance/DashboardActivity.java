@@ -1,8 +1,4 @@
-/**
- * Author: Ravi Tamada
- * URL: www.androidhive.info
- * twitter: http://twitter.com/ravitamada
- * */
+
 package com.assurance;
 
 import android.app.Activity;
