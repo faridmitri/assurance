@@ -23,6 +23,7 @@
             </intent-filter>
         </activity>
       <activity android:name="com.assurance.DashboardActivity"></activity>
+       <activity android:name="com.Client.Add"></activity>
     </application>
     
 

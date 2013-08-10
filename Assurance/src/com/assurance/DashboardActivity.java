@@ -7,11 +7,14 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+
+import com.Client.*;
 import com.library.UserFunctions;
 
 public class DashboardActivity extends Activity {
 	UserFunctions userFunctions;
 	Button btnLogout;
+	Button add;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +27,8 @@ public class DashboardActivity extends Activity {
         if(userFunctions.isUserLoggedIn(getApplicationContext())){
         	setContentView(R.layout.dashboard);
         	btnLogout = (Button) findViewById(R.id.btnLogout);
+        	add = (Button) findViewById(R.id.add);
+        	
         	
         	btnLogout.setOnClickListener(new View.OnClickListener() {
     			
@@ -47,7 +52,15 @@ public class DashboardActivity extends Activity {
         	finish();
         }
         
-        
+     // call add
+     		add.setOnClickListener(new View.OnClickListener() {
+
+               public void onClick(View v) {
+                   Intent myintent2 = new Intent(DashboardActivity.this,Add.class);
+                   startActivity(myintent2);
+
+                }
+          }); 
         
         
     }

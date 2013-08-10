@@ -24,7 +24,7 @@
         android:textStyle="bold" />
     
     <Button
-        android:id="@+id/btnLogout"
+        android:id="@+id/add"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dip"
