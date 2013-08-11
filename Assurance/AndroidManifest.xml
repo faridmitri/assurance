@@ -24,6 +24,8 @@
         </activity>
       <activity android:name="com.assurance.DashboardActivity"></activity>
        <activity android:name="com.Client.Add"></activity>
+       <activity android:name="com.Client.All_Clients"></activity>
+       <activity android:name="com.Client.Update"></activity>
     </application>
     
 

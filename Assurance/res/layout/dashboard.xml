@@ -7,8 +7,8 @@
     
     <TextView android:layout_width="fill_parent"
         	  android:layout_height="wrap_content"
-        	  android:text="WELCOME"
-        	  android:textSize="40dip"
+        	  android:text="@string/WELCOME"
+        	  android:textSize="40sp"
         	  android:gravity="center"
         	  android:layout_marginTop="20dip"/>
 
@@ -18,9 +18,9 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="0dip"
         android:background="@null"
-        android:text="Logout Me"
+        android:text="@string/logout"
         android:textColor="#21dbd4"
-        android:textSize="20dip"
+        android:textSize="20sp"
         android:textStyle="bold" />
     
     <Button
@@ -28,10 +28,19 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="20dip"
-        android:background="@null"
-        android:text="Add Data"
+        android:text="@string/add"
         android:textColor="#21dbd4"
-        android:textSize="50dip"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    
+     <Button
+        android:id="@+id/view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dip"
+        android:text="@string/all"
+        android:textColor="#21dbd4"
+        android:textSize="20sp"
         android:textStyle="bold" />
     
 

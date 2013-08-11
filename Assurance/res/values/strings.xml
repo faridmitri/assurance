@@ -6,4 +6,8 @@
     <string name="hello_world">Hello world!</string>
     <string name="clients">Clients</string>
      <string name="admin">Admin</string>
+     <string name="add">Add Clients</string>
+     <string name="logout">Log Out</string>
+      <string name="WELCOME">Welcome</string>
+       <string name="all">View All Clients</string>
 </resources>
