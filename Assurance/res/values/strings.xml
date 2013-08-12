@@ -10,4 +10,10 @@
      <string name="logout">Log Out</string>
       <string name="WELCOME">Welcome</string>
        <string name="all">View All Clients</string>
+        <string name="client">Client Name</string>
+        <string name="adress">Address</string>
+        <string name="phone">Phone</string>
+        <string name="plate">Plate Number</string>
+        <string name="car">Car</string>
+        <string name="fees">Fees</string>
 </resources>

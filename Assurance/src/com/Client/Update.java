@@ -51,7 +51,7 @@ public class Update extends Activity {
 
 	// JSON Node names
 	private static final String TAG_SUCCESS = "success";
-	private static final String TAG_PRODUCT = "product";
+	private static final String TAG_PRODUCT = "client";
 	private static final String TAG_PID = "pid";
 	private static final String TAG_NAME = "name";
 	private static final String TAG_ADRESS = "adress";
