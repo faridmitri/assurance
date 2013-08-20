@@ -121,7 +121,7 @@ public class All_Clients extends ListActivity {
 		}
 
 		/**
-		 * getting All products from url
+		 * getting All clients from url
 		 * */
 		protected String doInBackground(String... args) {
 			// Building Parameters

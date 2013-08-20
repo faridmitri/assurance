@@ -16,4 +16,5 @@
         <string name="plate">Plate Number</string>
         <string name="car">Car</string>
         <string name="fees">Fees</string>
+         <string name="search">Search Plate</string>
 </resources>

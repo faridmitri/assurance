@@ -26,6 +26,7 @@
        <activity android:name="com.Client.Add"></activity>
        <activity android:name="com.Client.All_Clients"></activity>
        <activity android:name="com.Client.Update"></activity>
+        <activity android:name="com.Client.Search_plate"></activity>
     </application>
     
 

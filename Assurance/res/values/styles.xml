@@ -16,5 +16,13 @@
     <style name="AppTheme" parent="AppBaseTheme">
         <!-- All customizations that are NOT specific to a particular API-level can go here. -->
     </style>
+    
+    <style name="text" >
+        <item name="android:textSize">17sp</item>
+        <item name="android:textColor">#FF0000</item>
+   
+        
+    </style>
+   
 
 </resources>

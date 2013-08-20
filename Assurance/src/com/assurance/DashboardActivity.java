@@ -16,6 +16,7 @@ public class DashboardActivity extends Activity {
 	Button btnLogout;
 	Button add;
 	Button view;
+	Button search;
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -30,6 +31,7 @@ public class DashboardActivity extends Activity {
         	btnLogout = (Button) findViewById(R.id.btnLogout);
         	add = (Button) findViewById(R.id.add);
         	view = (Button) findViewById(R.id.view);
+        	search = (Button) findViewById(R.id.search);
         	
         	btnLogout.setOnClickListener(new View.OnClickListener() {
     			
@@ -68,6 +70,16 @@ public class DashboardActivity extends Activity {
 
                public void onClick(View v) {
                    Intent myintent2 = new Intent(DashboardActivity.this,All_Clients.class);
+                   startActivity(myintent2);
+
+                }
+          }); 
+     		
+     	   // call search
+     		search.setOnClickListener(new View.OnClickListener() {
+
+               public void onClick(View v) {
+                   Intent myintent2 = new Intent(DashboardActivity.this,Search_plate.class);
                    startActivity(myintent2);
 
                 }
