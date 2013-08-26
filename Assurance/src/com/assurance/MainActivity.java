@@ -1,10 +1,10 @@
 
 package com.assurance;
 
-import java.util.HashMap;
-
 import org.json.JSONException;
 import org.json.JSONObject;
+
+
 
 import android.app.Activity;
 import android.content.Intent;
@@ -15,12 +15,14 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
+
 import com.library.DatabaseHandler;
 import com.library.UserFunctions;
+import com.rssreader.*;
 
 public class MainActivity extends Activity {
 	Button btnLogin;
-	Button btnLinkToRegister;
+	Button notemployee;
 	EditText inputEmail;
 	EditText inputPassword;
 	TextView loginErrorMsg;
@@ -43,7 +45,7 @@ public class MainActivity extends Activity {
 		inputEmail = (EditText) findViewById(R.id.loginEmail);
 		inputPassword = (EditText) findViewById(R.id.loginPassword);
 		btnLogin = (Button) findViewById(R.id.btnLogin);
-		btnLinkToRegister = (Button) findViewById(R.id.btnLinkToRegisterScreen);
+		notemployee = (Button) findViewById(R.id.notemployee);
 		loginErrorMsg = (TextView) findViewById(R.id.login_error);
 
 		// Login button Click Event
@@ -91,6 +93,14 @@ public class MainActivity extends Activity {
 			}
 		});
 
+		notemployee.setOnClickListener(new View.OnClickListener() {
+
+            public void onClick(View v) {
+                Intent myintent2 = new Intent(MainActivity.this,RssReaderActivity.class);
+                startActivity(myintent2);
+
+            }
+        });
 	
 	}
 }
