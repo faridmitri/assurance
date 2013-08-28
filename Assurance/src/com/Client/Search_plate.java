@@ -38,7 +38,7 @@ public class Search_plate extends ListActivity {
 	// Creating JSON Parser object
 	JSONParser jParser = new JSONParser();
 
-	ArrayList<HashMap<String, String>> clientlist;
+	ArrayList<HashMap<String, String>> productsList;
 
 	// url to get all products list
 	private static String url_all_products = "http://smb215.hostyd.com/android_connect/search.php";
@@ -75,7 +75,7 @@ public class Search_plate extends ListActivity {
 		
 
 		// Hashmap for ListView
-		clientlist = new ArrayList<HashMap<String, String>>();
+		productsList = new ArrayList<HashMap<String, String>>();
 	
 
 		// button click event
@@ -91,15 +91,15 @@ public class Search_plate extends ListActivity {
 		
 				
 				
-		// Get listview
+		//Get listview;
 	  	//ListView lv = getListView();
 
 				btnedit.setOnClickListener(new View.OnClickListener()  {
 
 					@Override
 					public void onClick(View view) {
-						// getting values from selected ListItem
-						String pid = ((TextView) view.findViewById(R.id.pid)).getText()
+						// getting values from selected Item
+						String pid = ((TextView)findViewById(R.id.pid)).getText()
 								.toString();
 
 						// Starting new intent
@@ -203,7 +203,7 @@ public class Search_plate extends ListActivity {
 						
 
 						// adding HashList to ArrayList
-						clientlist.add(map);
+						productsList.add(map);
 					}
 				} else {
 					// no products found
@@ -234,7 +234,7 @@ public class Search_plate extends ListActivity {
 					 * Updating parsed JSON data into ListView
 					 * */
 					ListAdapter adapter = new SimpleAdapter(
-							Search_plate.this, clientlist,
+							Search_plate.this, productsList,
 							R.layout.search_details, new String[] { TAG_PID,
 									TAG_NAME,TAG_ADRESS,TAG_PHONE,TAG_PLATE,TAG_CAR,TAG_FEES},
 							new int[] { R.id.pid, R.id.name,R.id.adress,R.id.phone,R.id.plate,R.id.car,R.id.fees });

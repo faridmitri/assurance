@@ -70,7 +70,7 @@ public class All_Clients extends ListActivity {
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
 				// getting values from selected ListItem
-				String pid = ((TextView) view.findViewById(R.id.pid)).getText()
+				String pid = ((TextView) findViewById(R.id.pid)).getText()
 						.toString();
 
 				// Starting new intent
