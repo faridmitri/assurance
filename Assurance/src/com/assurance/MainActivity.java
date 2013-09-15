@@ -6,9 +6,13 @@ import org.json.JSONObject;
 
 
 
+import android.annotation.SuppressLint;
+import android.annotation.TargetApi;
 import android.app.Activity;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
@@ -20,6 +24,8 @@ import com.library.DatabaseHandler;
 import com.library.UserFunctions;
 import com.rssreader.*;
 
+@TargetApi(Build.VERSION_CODES.GINGERBREAD)
+@SuppressLint("NewApi")
 public class MainActivity extends Activity {
 	Button btnLogin;
 	Button notemployee;
@@ -36,8 +42,15 @@ public class MainActivity extends Activity {
 	private static String KEY_EMAIL = "email";
 	private static String KEY_CREATED_AT = "created_at";
 
+	@TargetApi(Build.VERSION_CODES.GINGERBREAD)
+	@SuppressLint("NewApi")
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
+		if (android.os.Build.VERSION.SDK_INT > 9) {
+			StrictMode.ThreadPolicy policy = 
+				new StrictMode.ThreadPolicy.Builder().permitAll().build();
+			StrictMode.setThreadPolicy(policy);
+		}
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_main);
 
@@ -51,6 +64,7 @@ public class MainActivity extends Activity {
 		// Login button Click Event
 		btnLogin.setOnClickListener(new View.OnClickListener() {
 
+			 
 			public void onClick(View view) {
 				String email = inputEmail.getText().toString();
 				String password = inputPassword.getText().toString();
@@ -58,6 +72,8 @@ public class MainActivity extends Activity {
 				Log.d("Button", "Login");
 				JSONObject json = userFunction.loginUser(email, password);
 
+				
+				
 				// check for login response
 				try {
 					if (json.getString(KEY_SUCCESS) != null) {
@@ -92,7 +108,7 @@ public class MainActivity extends Activity {
 				}
 			}
 		});
-
+		
 		notemployee.setOnClickListener(new View.OnClickListener() {
 
             public void onClick(View v) {
@@ -101,6 +117,7 @@ public class MainActivity extends Activity {
 
             }
         });
-	
+		
 	}
 }
+
