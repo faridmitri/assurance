@@ -10,14 +10,24 @@
      <string name="logout">Log Out</string>
       <string name="WELCOME">Welcome</string>
        <string name="all">View All Clients</string>
-        <string name="client">Client Name</string>
-        <string name="adress">Address</string>
-        <string name="phone">Phone</string>
-        <string name="plate">Plate Number</string>
-        <string name="car">Car</string>
-        <string name="fees">Fees</string>
          <string name="search">Search Plate</string>
-         
+         <string name="LOGIN">Login</string>
+          <string name="Email">Email</string>
+         <string name="Password">Password</string>
+         <string name="notemp">I AM NOT AN EMPLOYEE!</string>
+          <string name="ClientName">Client Name</string>
+           <string name="Adress">Address</string>
+          <string name="Phone">Phone</string>
+          <string name="Plate">Plate</string>
+          <string name="Car">Car</string>
+            <string name="Fees">Fees USD</string>
+          <string name="Create">Create New Entry</string>
+            <string name="SearchPlate">Search Plate Number</string>
+          <string name="Search">Search</string>
+           <string name="edit">Edit</string>
+          
+          
+          
          <string name="error_config">Please set the %1$s constant and recompile the app.</string>
     <string name="already_registered">Device is already registered on server.</string>
     <string name="gcm_registered">From GCM: device successfully registered!</string>

@@ -15,11 +15,11 @@ android:orientation="vertical"
     <!-- Name -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Client Name"
+        android:text="@string/ClientName"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:textSize="17dip"/>
+        android:textSize="17sp"/>
     
     <!-- Input Name -->
 	<EditText android:id="@+id/inputName"
@@ -32,11 +32,11 @@ android:orientation="vertical"
 	<!-- Adress -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Adress"
+        android:text="@string/Adress"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:textSize="17dip"/>
+        android:textSize="17sp"/>
     
     <!-- Input Adress -->
 	<EditText android:id="@+id/inputAdress" 
@@ -50,11 +50,11 @@ android:orientation="vertical"
 	<!-- Phone -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Phone"
+        android:text="@string/Phone"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:textSize="17dip"/>
+        android:textSize="17sp"/>
     
     <!-- Phone -->
 	<EditText android:id="@+id/inputPhone" 
@@ -68,11 +68,11 @@ android:orientation="vertical"
 		<!-- Plate -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Plate"
+        android:text="@string/Plate"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:textSize="17dip"/>
+        android:textSize="17sp"/>
     
     <!-- Input Plate -->
 	<EditText android:id="@+id/inputPlate" 
@@ -86,11 +86,11 @@ android:orientation="vertical"
 	<!-- car -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Car"
+        android:text="@string/Car"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:textSize="17dip"/>
+        android:textSize="17sp"/>
     
     <!-- Input car-->
 	<EditText android:id="@+id/inputCar"
@@ -103,11 +103,11 @@ android:orientation="vertical"
 			<!-- Fees-->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="Fees"
+        android:text="@string/Fees"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:textSize="17dip"/>
+        android:textSize="17sp"/>
     
     <!-- Input Fees -->
 	<EditText android:id="@+id/inputFees" 
@@ -122,7 +122,7 @@ android:orientation="vertical"
 	<Button android:id="@+id/btnCreateProduct" 
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:text="Create Product"/>
+	    android:text="@string/Create"/>
 	
 </LinearLayout>
 </ScrollView>

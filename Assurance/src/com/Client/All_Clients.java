@@ -65,14 +65,15 @@ public class All_Clients extends ListActivity {
 		// on seleting single product
 		// launching Edit Product Screen
 		lv.setOnItemClickListener(new OnItemClickListener() {
-
+             
 			@Override
 			public void onItemClick(AdapterView<?> parent, View view,
 					int position, long id) {
+			
 				// getting values from selected ListItem
-				String pid = ((TextView) findViewById(R.id.pid)).getText()
+				String pid = ((TextView) view.findViewById(R.id.pid)).getText()
 						.toString();
-
+				Log.i("id is" ,pid);
 				// Starting new intent
 				Intent in = new Intent(getApplicationContext(),
 						Update.class);

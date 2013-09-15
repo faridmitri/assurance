@@ -12,19 +12,21 @@
     <TextView android:layout_width="fill_parent"
      
         android:layout_height="wrap_content"
-        android:text="Search Plate Number"
+        android:text="@string/SearchPlate"
         android:paddingLeft="10dip"
         android:paddingRight="10dip"
         android:paddingTop="10dip"
-        android:textSize="17dip"/>
+        android:textSize="17sp"/>
     
-    <!-- Input Name -->
+    <!-- Input Search -->
 	<EditText android:id="@+id/inputSearch"
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
 	    android:layout_margin="5dip"
 	    android:layout_marginBottom="15dip"
-	    android:singleLine="true"/>
+	    android:singleLine="true"
+	    android:inputType="numberDecimal"/>
+	    />
 	
 
 	
@@ -32,7 +34,7 @@
 	<Button android:id="@+id/Search" 
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:text="Search "/>
+	    android:text="@string/Search"/>
 	
 
 <ScrollView 
@@ -56,7 +58,7 @@ android:orientation="vertical"
 <Button android:id="@+id/edit" 
 	    android:layout_width="fill_parent"
 	    android:layout_height="wrap_content"
-	    android:text="edit "/>
+	    android:text="@string/edit"/>
 
 </LinearLayout>
 </ScrollView>

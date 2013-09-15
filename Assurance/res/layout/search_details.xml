@@ -21,8 +21,8 @@ android:orientation="vertical"
     <!-- Name Label -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/client"
-        style="@style/text" />r
+        android:text="@string/ClientName"
+        style="@style/text" />
     
     <TextView
         android:id="@+id/name"
@@ -36,10 +36,10 @@ android:orientation="vertical"
     <!-- adress -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/adress"
+        android:text="@string/Adress"
        style="@style/text"/>
     
->
+
     
      <TextView
         android:id="@+id/adress"
@@ -53,7 +53,7 @@ android:orientation="vertical"
        <!-- phone -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/phone"
+        android:text="@string/Phone"
        style="@style/text"/>
     
      <TextView
@@ -68,7 +68,7 @@ android:orientation="vertical"
        <!-- Plate Number -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/plate"
+        android:text="@string/Plate"
         style="@style/text"/>
      
       <TextView
@@ -83,7 +83,7 @@ android:orientation="vertical"
         <!-- car -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/car"
+        android:text="@string/Car"
         style="@style/text"/>
       
        <TextView
@@ -98,7 +98,7 @@ android:orientation="vertical"
          <!-- fees -->
     <TextView android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:text="@string/fees"
+        android:text="@string/Fees"
         style="@style/text"/>
        
         <TextView
