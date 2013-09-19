@@ -1,0 +1,65 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    
+     >
+     
+    <!-- Search -->
+    <TextView android:layout_width="fill_parent"
+     
+        android:layout_height="wrap_content"
+        android:text="@string/SearchPlate"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="10dip"
+        android:textSize="17sp"/>
+    
+    <!-- Input Search -->
+	<EditText android:id="@+id/inputSearch"
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:layout_margin="5dip"
+	    android:layout_marginBottom="15dip"
+	    android:singleLine="true"
+	    android:inputType="numberDecimal"/>
+	    />
+	
+
+	
+	<!-- Button Search -->
+	<Button android:id="@+id/Search" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/Search"/>
+	
+
+<ScrollView 
+android:layout_width="fill_parent"
+android:layout_height="fill_parent"
+android:orientation="vertical"
+>
+
+<LinearLayout 
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    
+     >
+            <ListView
+        android:id="@android:id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"/>
+            
+<Button android:id="@+id/edit" 
+	    android:layout_width="fill_parent"
+	    android:layout_height="wrap_content"
+	    android:text="@string/edit"/>
+
+</LinearLayout>
+</ScrollView>
+</LinearLayout>
