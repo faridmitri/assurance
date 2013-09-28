@@ -9,3 +9,6 @@ où les employee peuvent travailler de leur mobile
 - Envoyer "Push Notification" à un employer specifique (qui à deja enregistrer son mobile)
 
 et les client peuvent voir les derniere nouvelle de la companie
+
+
+Play Store : https://play.google.com/store/search?q=smb215
