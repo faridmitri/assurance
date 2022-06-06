@@ -10,10 +10,3 @@ où les employee peuvent travailler de leur mobile
 
 et les client peuvent voir les derniere nouvelle de la companie
 
-
-Pour tester l'application:
-
-Play Store : https://play.google.com/store/search?q=smb215
-
-user: smb215@cnam.com
-pass: smb215
